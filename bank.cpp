@@ -1,9 +1,9 @@
-#include <iostream> //bank thing inspired from an exercise we had to do
+#include <iostream> //bank "app" developed by Timur Aksoy
 #include <cmath>
 using namespace std;
 
 void MenuThing(){
-	cout<<"What operation do you desire? (1 - deposit sum; 2 - withdraw sum): ";
+	cout<<"What operation do you desire? (1 - deposit sum; 2 - withdraw sum; 3 - invest sum; 4 - close account): ";
 	int depwit;
 	cin>>depwit;
 	switch(depwit){
@@ -19,7 +19,18 @@ void MenuThing(){
 		cin>>am2;
 		cout<<"You have withdrawn "<<am2<<" usd from your account";
 		break;
+	case 3:
+	    cout<<"Desired amount?: ";
+	    int am3;
+	    cin>>am3;
+	    cout<<"You have transferred "<<am3<<" usd from your account for the purpose of investing";
+	    break;
+	case 4:
+	    cout<<"bye";
+	    break;
+	    
 	}
+	
 }
 
 void ChoiceOne(){
